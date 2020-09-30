@@ -25,7 +25,7 @@ SECRET_KEY = '&_@^^dgd5xvgs1(_j4tr*@^#l_+*^^2dy82zi@uwhfb4u6msfc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vatsalya.net']
+ALLOWED_HOSTS = ['127.0.0.1','.vatsalya.net','http://vatsalya.pythonanywhere.com/']
 
 
 # Application definition
