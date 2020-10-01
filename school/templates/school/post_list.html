@@ -8,20 +8,14 @@
         </div>
 
         <div>
-            <p>Welcome to Vatsalya home page. This is official website for 
-            Vatsalya school, Chapra. We are currently undertaking admissions 
-            for class play to 8th. Contact us immidiately to secure a future 
-            for your child.</p>
-            <h2><a href="">Admissions Open</a></h2>
-            <p>For details regarding admissions contact us at our email or 
-            give us a call @ 999999999.</p>
-        </div>
 
-        <div>
-            <p>Co-Curicular activities</p>
-            <h2><a href="">Gallery</a></h2>
-            <p>Click on the link above to watch photos and videos of school's   
-            co-curricular activities.</p>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
         </div>
     </body>
 </html>
